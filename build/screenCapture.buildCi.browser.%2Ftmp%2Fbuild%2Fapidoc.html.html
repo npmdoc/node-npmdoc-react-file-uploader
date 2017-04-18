@@ -1,0 +1,1079 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/lionng429/react-file-uploader">react-file-uploader (v0.3.3)</a>
+</h1>
+<h4>A set of file-upload-components with React.js.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader">module react-file-uploader</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver">
+            function <span class="apidocSignatureSpan">react-file-uploader.</span>Receiver
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler">
+            function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadHandler
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager">
+            function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadManager
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.</span>Receiver.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.</span>UploadHandler.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.</span>UploadManager.defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.</span>UploadManager.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.</span>status</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader.Receiver">module react-file-uploader.Receiver</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.Receiver">
+            function <span class="apidocSignatureSpan">react-file-uploader.</span>Receiver
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.Receiver.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader.Receiver.propTypes">module react-file-uploader.Receiver.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.children">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.customClass">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>customClass
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.isOpen">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>isOpen
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.onDragEnter">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onDragEnter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.onDragLeave">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onDragLeave
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.onDragOver">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onDragOver
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.onFileDrop">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onFileDrop
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.Receiver.propTypes.style">
+            function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader.UploadHandler">module react-file-uploader.UploadHandler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.UploadHandler">
+            function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadHandler
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader.UploadHandler.propTypes">module react-file-uploader.UploadHandler.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.autoStart">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>autoStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.children">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.component">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>component
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.customClass">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>customClass
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.file">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>file
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.key">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>key
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.style">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.upload">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>upload
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader.UploadManager">module react-file-uploader.UploadManager</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.UploadManager">
+            function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadManager
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.UploadManager.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-file-uploader.UploadManager.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader.UploadManager.defaultProps">module react-file-uploader.UploadManager.defaultProps</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.defaultProps.uploadErrorHandler">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.defaultProps.</span>uploadErrorHandler
+            <span class="apidocSignatureSpan">(err, res)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-file-uploader.UploadManager.defaultProps.</span>component</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-file-uploader.UploadManager.propTypes">module react-file-uploader.UploadManager.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.children">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>children
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.component">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>component
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.customClass">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>customClass
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadEnd">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>onUploadEnd
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadProgress">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>onUploadProgress
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadStart">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>onUploadStart
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.style">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>style
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.uploadErrorHandler">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>uploadErrorHandler
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.uploadHeader">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>uploadHeader
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-file-uploader.UploadManager.propTypes.uploadUrl">
+            function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>uploadUrl
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader" id="apidoc.module.react-file-uploader">module react-file-uploader</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver" id="apidoc.element.react-file-uploader.Receiver">
+        function <span class="apidocSignatureSpan">react-file-uploader.</span>Receiver
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Receiver(props) {
+  _classCallCheck(this, Receiver);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Receiver).call(this, props));
+
+  _this.onDragEnter = _this.onDragEnter.bind(_this);
+  _this.onDragOver = _this.onDragOver.bind(_this);
+  _this.onDragLeave = _this.onDragLeave.bind(_this);
+  _this.onFileDrop = _this.onFileDrop.bind(_this);
+
+  // this is to monitor the hierarchy
+  // for window onDragEnter event
+  _this.state = {
+    dragLevel: 0
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler" id="apidoc.element.react-file-uploader.UploadHandler">
+        function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadHandler
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function UploadHandler() {
+  _classCallCheck(this, UploadHandler);
+
+  return _possibleConstructorReturn(this, Object.getPrototypeOf(UploadHandler).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager" id="apidoc.element.react-file-uploader.UploadManager">
+        function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadManager
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function UploadManager(props) {
+  _classCallCheck(this, UploadManager);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(UploadManager).call(this, props));
+
+  _this.upload = _this.upload.bind(_this);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader.Receiver" id="apidoc.module.react-file-uploader.Receiver">module react-file-uploader.Receiver</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.Receiver" id="apidoc.element.react-file-uploader.Receiver.Receiver">
+        function <span class="apidocSignatureSpan">react-file-uploader.</span>Receiver
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Receiver(props) {
+  _classCallCheck(this, Receiver);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Receiver).call(this, props));
+
+  _this.onDragEnter = _this.onDragEnter.bind(_this);
+  _this.onDragOver = _this.onDragOver.bind(_this);
+  _this.onDragLeave = _this.onDragLeave.bind(_this);
+  _this.onFileDrop = _this.onFileDrop.bind(_this);
+
+  // this is to monitor the hierarchy
+  // for window onDragEnter event
+  _this.state = {
+    dragLevel: 0
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader.Receiver.propTypes" id="apidoc.module.react-file-uploader.Receiver.propTypes">module react-file-uploader.Receiver.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.children" id="apidoc.element.react-file-uploader.Receiver.propTypes.children">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.customClass" id="apidoc.element.react-file-uploader.Receiver.propTypes.customClass">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>customClass
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">customClass = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.isOpen" id="apidoc.element.react-file-uploader.Receiver.propTypes.isOpen">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>isOpen
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isOpen = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.onDragEnter" id="apidoc.element.react-file-uploader.Receiver.propTypes.onDragEnter">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onDragEnter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onDragEnter = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  key: 'onDragEnter',
+  value: function onDragEnter(e) {
+    var dragLevel = this.state.dragLevel + 1;
+
+    this.setState({ dragLevel: dragLevel });
+
+    if (!this.props.isOpen) {
+      this.props.<span class="apidocCodeKeywordSpan">onDragEnter</span>(e);
+    }
+  }
+}, {
+  key: 'onDragLeave',
+  value: function onDragLeave(e) {
+    var dragLevel = this.state.dragLevel - 1;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.onDragLeave" id="apidoc.element.react-file-uploader.Receiver.propTypes.onDragLeave">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onDragLeave
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onDragLeave = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  key: 'onDragLeave',
+  value: function onDragLeave(e) {
+    var dragLevel = this.state.dragLevel - 1;
+
+    this.setState({ dragLevel: dragLevel });
+
+    if (dragLevel === 0) {
+      this.props.<span class="apidocCodeKeywordSpan">onDragLeave</span>(e);
+    }
+  }
+}, {
+  key: 'onDragOver',
+  value: function onDragOver(e) {
+    e.preventDefault();
+    this.props.onDragOver(e);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.onDragOver" id="apidoc.element.react-file-uploader.Receiver.propTypes.onDragOver">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onDragOver
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onDragOver = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      this.props.onDragLeave(e);
+    }
+  }
+}, {
+  key: 'onDragOver',
+  value: function onDragOver(e) {
+    e.preventDefault();
+    this.props.<span class="apidocCodeKeywordSpan">onDragOver</span>(e);
+  }
+}, {
+  key: 'onFileDrop',
+  value: function onFileDrop(e) {
+    // eslint-disable-next-line no-param-reassign
+    e = e || window.event;
+    e.preventDefault();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.onFileDrop" id="apidoc.element.react-file-uploader.Receiver.propTypes.onFileDrop">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>onFileDrop
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onFileDrop = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        files.push(fileList[i]);
+      }
+    }
+
+    // reset drag level once dropped
+    this.setState({ dragLevel: 0 });
+
+    this.props.<span class="apidocCodeKeywordSpan">onFileDrop</span>(e, files);
+  }
+}, {
+  key: 'render',
+  value: function render() {
+    var _props = this.props;
+    var isOpen = _props.isOpen;
+    var customClass = _props.customClass;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.Receiver.propTypes.style" id="apidoc.element.react-file-uploader.Receiver.propTypes.style">
+        function <span class="apidocSignatureSpan">react-file-uploader.Receiver.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader.UploadHandler" id="apidoc.module.react-file-uploader.UploadHandler">module react-file-uploader.UploadHandler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.UploadHandler" id="apidoc.element.react-file-uploader.UploadHandler.UploadHandler">
+        function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadHandler
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function UploadHandler() {
+  _classCallCheck(this, UploadHandler);
+
+  return _possibleConstructorReturn(this, Object.getPrototypeOf(UploadHandler).apply(this, arguments));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader.UploadHandler.propTypes" id="apidoc.module.react-file-uploader.UploadHandler.propTypes">module react-file-uploader.UploadHandler.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.autoStart" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.autoStart">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>autoStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">autoStart = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.children" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.children">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.component" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.component">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>component
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">component = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.customClass" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.customClass">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>customClass
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">customClass = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.file" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.file">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>file
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">file = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.key" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.key">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>key
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">key = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.style" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.style">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadHandler.propTypes.upload" id="apidoc.element.react-file-uploader.UploadHandler.propTypes.upload">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadHandler.propTypes.</span>upload
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">upload = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader.UploadManager" id="apidoc.module.react-file-uploader.UploadManager">module react-file-uploader.UploadManager</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.UploadManager" id="apidoc.element.react-file-uploader.UploadManager.UploadManager">
+        function <span class="apidocSignatureSpan">react-file-uploader.</span>UploadManager
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function UploadManager(props) {
+  _classCallCheck(this, UploadManager);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(UploadManager).call(this, props));
+
+  _this.upload = _this.upload.bind(_this);
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader.UploadManager.defaultProps" id="apidoc.module.react-file-uploader.UploadManager.defaultProps">module react-file-uploader.UploadManager.defaultProps</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.defaultProps.uploadErrorHandler" id="apidoc.element.react-file-uploader.UploadManager.defaultProps.uploadErrorHandler">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.defaultProps.</span>uploadErrorHandler
+        <span class="apidocSignatureSpan">(err, res)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function uploadErrorHandler(err, res) {
+  var error = null;
+  var body = (0, _clone2.default)(res.body);
+
+  if (err) {
+    error = err.message;
+  } else if (body &amp;&amp; body.errors) {
+    error = body.errors;
+  }
+
+  delete body.errors;
+
+  return { error: error, result: body };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-file-uploader.UploadManager.propTypes" id="apidoc.module.react-file-uploader.UploadManager.propTypes">module react-file-uploader.UploadManager.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.children" id="apidoc.element.react-file-uploader.UploadManager.propTypes.children">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>children
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">children = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.component" id="apidoc.element.react-file-uploader.UploadManager.propTypes.component">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>component
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">component = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.customClass" id="apidoc.element.react-file-uploader.UploadManager.propTypes.customClass">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>customClass
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">customClass = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadEnd" id="apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadEnd">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>onUploadEnd
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onUploadEnd = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadProgress" id="apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadProgress">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>onUploadProgress
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onUploadProgress = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadStart" id="apidoc.element.react-file-uploader.UploadManager.propTypes.onUploadStart">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>onUploadStart
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onUploadStart = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.style" id="apidoc.element.react-file-uploader.UploadManager.propTypes.style">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>style
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">style = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.uploadErrorHandler" id="apidoc.element.react-file-uploader.UploadManager.propTypes.uploadErrorHandler">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>uploadErrorHandler
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uploadErrorHandler = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.uploadHeader" id="apidoc.element.react-file-uploader.UploadManager.propTypes.uploadHeader">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>uploadHeader
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uploadHeader = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-file-uploader.UploadManager.propTypes.uploadUrl" id="apidoc.element.react-file-uploader.UploadManager.propTypes.uploadUrl">
+        function <span class="apidocSignatureSpan">react-file-uploader.UploadManager.propTypes.</span>uploadUrl
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">uploadUrl = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
