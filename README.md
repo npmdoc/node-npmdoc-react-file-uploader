@@ -1,6 +1,7 @@
 # npmdoc-react-file-uploader
 
-api documentation for  [react-file-uploader (v0.3.3)](https://github.com/lionng429/react-file-uploader)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-file-uploader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-file-uploader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-file-uploader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-file-uploader)
+#### basic api documentation for  [react-file-uploader (v0.3.3)](https://github.com/lionng429/react-file-uploader)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-file-uploader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-file-uploader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-file-uploader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-file-uploader)
+
 #### A set of file-upload-components with React.js.
 
 [![NPM](https://nodei.co/npm/react-file-uploader.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-file-uploader)
@@ -108,7 +109,8 @@ api documentation for  [react-file-uploader (v0.3.3)](https://github.com/lionng4
         "test": "jest",
         "test:report": "jest --coverage"
     },
-    "version": "0.3.3"
+    "version": "0.3.3",
+    "bin": {}
 }
 ```
 
